@@ -1,6 +1,11 @@
-# Personal Website
+# Academic Website
 
-Static personal website for GitHub Pages.
+Static academic website for GitHub Pages.
+
+Pages:
+- `index.html` (Home)
+- `research.html` (Research)
+- `teaching.html` (Teaching)
 
 ## Run locally
 

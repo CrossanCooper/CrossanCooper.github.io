@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website of Crossan Cooper" />
-  <title>Crossan Cooper</title>
+  <meta name="description" content="Academic website of Crossan Cooper" />
+  <title>Crossan Cooper | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
@@ -12,65 +12,69 @@
 </head>
 <body>
   <div class="grain"></div>
-  <header class="site-header" id="top">
-    <a class="logo" href="#top">CC</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">CC</a>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a class="current" href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
     </nav>
   </header>
 
   <main>
     <section class="hero reveal">
-      <p class="eyebrow">Personal Website</p>
+      <p class="eyebrow">Academic Website</p>
       <h1>Crossan Cooper</h1>
-      <p class="subtitle">I build useful digital products with clean code, sharp design, and practical outcomes.</p>
+      <p class="subtitle">
+        I study computational approaches to public-interest problems, with emphasis on methods that are rigorous,
+        reproducible, and deployable in real settings.
+      </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+        <a class="btn btn-primary" href="research.html">View Research</a>
+        <a class="btn btn-ghost" href="teaching.html">View Teaching</a>
       </div>
     </section>
 
-    <section class="about reveal" id="about">
-      <h2>About</h2>
+    <section class="about reveal">
+      <h2>Biography</h2>
       <p>
-        I focus on building fast, reliable web experiences that solve real problems. I care about clear architecture,
-        thoughtful UI, and shipping work that lasts.
+        I am a researcher and educator focused on data-driven decision systems. My work sits at the intersection of
+        machine learning, policy analysis, and software engineering. I value transparent methods and collaborative
+        scholarship.
       </p>
     </section>
 
-    <section class="projects reveal" id="projects">
+    <section class="projects reveal">
       <div class="section-head">
-        <h2>Selected Projects</h2>
-        <p>Replace these with your own work.</p>
+        <h2>Current Focus</h2>
+        <p>Update these themes to match your agenda.</p>
       </div>
       <div class="project-grid">
         <article class="card">
-          <h3>Project One</h3>
-          <p>A concise description of what it does, who it helps, and why it matters.</p>
-          <a href="#" aria-label="Open Project One">Explore</a>
+          <h3>Trustworthy AI</h3>
+          <p>Methods for reliable model behavior, uncertainty quantification, and evaluation under real-world shift.</p>
+          <a href="research.html" aria-label="Open Research Page">Research</a>
         </article>
         <article class="card">
-          <h3>Project Two</h3>
-          <p>An API, app, or workflow tool you are proud of, with clear measurable impact.</p>
-          <a href="#" aria-label="Open Project Two">Explore</a>
+          <h3>Public Data Systems</h3>
+          <p>Building open-source infrastructure for policy-relevant analysis and accountable digital governance.</p>
+          <a href="research.html" aria-label="Open Research Page">Research</a>
         </article>
         <article class="card">
-          <h3>Project Three</h3>
-          <p>A focused experimental build where you pushed technical or design boundaries.</p>
-          <a href="#" aria-label="Open Project Three">Explore</a>
+          <h3>Pedagogy and Mentorship</h3>
+          <p>Course design and advising centered on clarity, evidence, and practical implementation skills.</p>
+          <a href="teaching.html" aria-label="Open Teaching Page">Teaching</a>
         </article>
       </div>
     </section>
 
-    <section class="contact reveal" id="contact">
+    <section class="contact reveal">
       <h2>Contact</h2>
-      <p>Open to collaborations, product work, and interesting problems.</p>
+      <p>Open to collaborations, invited talks, and student supervision.</p>
       <div class="contact-links">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:crossancooper@gmail.com">crossancooper@gmail.com</a>
+        <a href="https://github.com/CrossanCooper" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noreferrer">Google Scholar</a>
       </div>
     </section>
   </main>
