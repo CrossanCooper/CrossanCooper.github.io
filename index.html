@@ -8,43 +8,49 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar">
-      <h1>Crossan Cooper</h1>
-      <p>PhD Candidate in Economics Yale University</p>
-      <ul class="contact-list">
-        <li><a href="mailto:crossan.cooper@yale.edu">Email</a></li>
-        <li><a href="https://twitter.com/crossan_you_up" target="_blank" rel="noreferrer">Twitter/X</a></li>
-             <!-- <li><a href="https://twitter.com/crossan_you_up" target="_blank" rel="noreferrer">CV</a></li> -->
-      </ul>
-    </aside>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="identity">
+        <h1>Crossan Cooper</h1>
+        <p>PhD Candidate in Economics, Yale University</p>
+      </div>
+      <nav class="top-nav">
+        <a class="current" href="index.html">home</a>
+        <a href="research.html">research</a>
+        <a href="teaching.html">teaching</a>
+      </nav>
+    </header>
 
-    <div class="main-col">
-      <header class="top-nav">
-        <a class="current" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-      </header>
+    <div class="header-rule"></div>
 
-      <main>
-        <p>
-          <strong>
-            Welcome!
-          </strong> I am a PhD candidate in Economics at <a href="https://economics.yale.edu/" target="_blank" rel="noreferrer">Yale</a>.
-          I study the design and impacts of government transfer and subsidy programs, with an emphasis on housing and
-          education markets.
-        </p>
-        <p>
-          Before arriving at Yale, I studied math and economics at
-          <a href="https://www.davidson.edu/" target="_blank" rel="noreferrer">Davidson College</a>. I grew up in 
-          a <a href="https://alabama.travel/article/alabamas-hidden-gem-scottsboro" target="_blank" rel="noreferrer">small town</a> in northeastern Alabama.
-        </p>
-      </main>
+    <main class="main-content">
+      <section class="home-intro">
+        <div class="home-media">
+          <img src="Crossan_Cooper.png" alt="Crossan Cooper" />
+          <ul class="contact-list">
+            <li><a href="mailto:crossan.cooper@yale.edu">Email</a> <a href="https://twitter.com/crossan_you_up" target="_blank" rel="noreferrer">Twitter/X</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>
+            <strong>Welcome!</strong> I'm a PhD candidate in Economics at
+            <a href="https://economics.yale.edu/" target="_blank" rel="noreferrer">Yale</a>.
+            I use administrative data, natural experiments, and structural models to study the impacts of government
+            transfer and subsidy programs, with a recent emphasis on housing and education markets.
+          </p>
+          <p>
+            Before arriving at Yale, I studied math and economics at
+            <a href="https://www.davidson.edu/" target="_blank" rel="noreferrer">Davidson College</a>. I grew up in
+            a <a href="https://alabama.travel/article/alabamas-hidden-gem-scottsboro" target="_blank" rel="noreferrer">small town</a>
+            in northeastern Alabama.
+          </p>
+        </div>
+      </section>
+    </main>
 
-      <footer>
-        <p>&copy; <span id="year"></span> Crossan Cooper</p>
-      </footer>
-    </div>
+    <footer>
+      <p>&copy; <span id="year"></span> Crossan Cooper</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
