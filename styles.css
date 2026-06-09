@@ -10,20 +10,26 @@ body {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #222;
-  background: #fff;
+  color: #20242a;
+  background: #f7f9fc;
   line-height: 1.55;
   font-size: 16px;
 }
 
 a {
   color: #1e5bc3;
+  text-underline-offset: 0.16em;
+}
+
+a:hover,
+a:focus {
+  color: #17458f;
 }
 
 .page-wrap {
-  max-width: 1840px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 2.75rem 2.1rem 2rem;
+  padding: 2.75rem 2rem 2rem;
 }
 
 .site-header {
@@ -37,7 +43,7 @@ a {
   margin: 0;
   font-size: clamp(1.55rem, 2.5vw, 2.2rem);
   line-height: 1.1;
-  color: #222;
+  color: #20242a;
   font-weight: 700;
 }
 
@@ -68,14 +74,23 @@ a {
 .top-nav a {
   text-decoration: none;
   margin-left: 1.25rem;
-  font-size: clamp(1.1rem, 1.8vw, 2.8rem);
+  padding-bottom: 0.16rem;
+  border-bottom: 2px solid transparent;
+  font-size: clamp(1.05rem, 1.1vw, 1.35rem);
   color: #333;
   text-transform: capitalize;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+  border-bottom-color: #9db4d8;
+  color: #1e5bc3;
 }
 
 .top-nav a.current {
   text-decoration: none;
   font-weight: 600;
+  border-bottom-color: #1e5bc3;
 }
 
 .header-rule {
@@ -84,7 +99,8 @@ a {
 }
 
 .main-content {
-  max-width: 920px;
+  max-width: 940px;
+  margin: 0 auto;
   padding-top: 1.6rem;
 }
 
@@ -94,8 +110,8 @@ a {
 
 .home-intro {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 8rem;
+  grid-template-columns: 290px minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
   align-items: start;
 }
 
@@ -103,16 +119,39 @@ a {
   width: 290px;
   height: 290px;
   object-fit: cover;
+  display: block;
+  border: 1px solid #d8e1ef;
+  box-shadow: 0 10px 24px rgba(32, 36, 42, 0.08);
 }
 
 .contact-list {
   list-style: none;
   margin: 0.85rem 0 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.75rem;
+  align-items: center;
 }
 
 .contact-list li {
-  margin-bottom: 0.25rem;
+  margin: 0;
+}
+
+.contact-list li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin-left: 0.75rem;
+  border-radius: 50%;
+  background: #9aa3ad;
+  vertical-align: middle;
+}
+
+.home-copy {
+  max-width: 34rem;
+  padding-top: 0.1rem;
 }
 
 main h2,
@@ -120,6 +159,7 @@ main h3,
 main h4 {
   margin: 0 0 0.45rem;
   line-height: 1.3;
+  color: #20242a;
 }
 
 main h3,
@@ -139,9 +179,45 @@ main ol {
 }
 
 footer {
-  margin-top: 1.2rem;
+  max-width: 940px;
+  margin: 1.4rem auto 0;
   color: #666;
   font-size: 0.9rem;
+}
+
+.paper-list {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+}
+
+.paper-list > .paper-item {
+  list-style: none;
+  padding: 0.95rem 0;
+  border-top: 1px solid #dfe5ee;
+}
+
+.paper-list .paper-item:last-child {
+  border-bottom: 1px solid #dfe5ee;
+}
+
+.compact-paper-list > .paper-item {
+  padding: 0.7rem 0;
+}
+
+.paper-title,
+.paper-meta {
+  margin: 0;
+}
+
+.paper-title {
+  line-height: 1.4;
+}
+
+.paper-meta {
+  margin-top: 0.2rem;
+  color: #59616c;
+  font-size: 0.94rem;
 }
 
 .paper-actions {
@@ -177,8 +253,11 @@ footer {
 .paper-abstract {
   margin-top: 0.35rem;
   margin-bottom: 0.75rem;
-  padding-left: 0.85rem;
-  border-left: 2px solid #d8e1ef;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #d8e1ef;
+  border-left: 3px solid #9db4d8;
+  border-radius: 4px;
+  background: #f6f8fb;
   font-size: 0.92rem;
   color: #555;
 }
@@ -229,6 +308,7 @@ footer {
   }
 
   .contact-list {
+    justify-content: center;
     text-align: center;
   }
 }
