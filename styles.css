@@ -144,9 +144,41 @@ footer {
   font-size: 0.9rem;
 }
 
+.paper-actions {
+  margin-top: 0.45rem;
+}
+
+.abstract-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid #9db4d8;
+  border-radius: 4px;
+  background: #fff;
+  color: #1e5bc3;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.abstract-toggle:hover,
+.abstract-toggle:focus {
+  border-color: #1e5bc3;
+  background: #f5f8fd;
+}
+
+.abstract-toggle:focus {
+  outline: 2px solid #9db4d8;
+  outline-offset: 2px;
+}
+
 .paper-abstract {
   margin-top: 0.35rem;
   margin-bottom: 0.75rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid #d8e1ef;
   font-size: 0.92rem;
   color: #555;
 }
