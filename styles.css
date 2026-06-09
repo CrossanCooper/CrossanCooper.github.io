@@ -201,8 +201,17 @@ footer {
   border-bottom: 1px solid #dfe5ee;
 }
 
+.compact-paper-list {
+  margin-top: 0.15rem;
+}
+
 .compact-paper-list > .paper-item {
-  padding: 0.7rem 0;
+  padding: 0.25rem 0 0.45rem;
+  border-top: 0;
+}
+
+.compact-paper-list > .paper-item:last-child {
+  border-bottom: 0;
 }
 
 .paper-title,
