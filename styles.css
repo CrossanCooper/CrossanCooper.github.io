@@ -201,6 +201,11 @@ footer {
   border-bottom: 1px solid #dfe5ee;
 }
 
+.compact-section-heading {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #dfe5ee;
+}
+
 .compact-paper-list {
   margin-top: 0.15rem;
 }
@@ -269,6 +274,54 @@ footer {
   background: #f6f8fb;
   font-size: 0.92rem;
   color: #555;
+}
+
+.teaching-section {
+  margin-top: 1.15rem;
+}
+
+.course-list {
+  margin: 0.2rem 0 1.25rem;
+}
+
+.course-item {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #e3e8ef;
+}
+
+.course-item:last-child {
+  border-bottom: 0;
+}
+
+.course-title,
+.course-meta {
+  margin: 0;
+}
+
+.course-title {
+  line-height: 1.4;
+}
+
+.course-meta {
+  margin-top: 0.18rem;
+  color: #59616c;
+  font-size: 0.94rem;
+}
+
+.comment-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.student-comment {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  border-left: 3px solid #9db4d8;
+  background: #f6f8fb;
+  color: #4f5863;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 980px) {
