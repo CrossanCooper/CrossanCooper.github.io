@@ -234,34 +234,40 @@ footer {
   font-size: 0.94rem;
 }
 
-.paper-actions {
-  margin-top: 0.45rem;
+.paper-links {
+  display: inline;
+  margin-left: 0.22rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.paper-links a {
+  text-decoration: none;
 }
 
 .abstract-toggle {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2rem;
-  padding: 0.28rem 0.7rem;
-  border: 1px solid #9db4d8;
-  border-radius: 4px;
-  background: #fff;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: #1e5bc3;
   font: inherit;
-  font-size: 0.9rem;
-  line-height: 1.2;
+  line-height: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .abstract-toggle:hover,
 .abstract-toggle:focus {
-  border-color: #1e5bc3;
-  background: #f5f8fd;
+  color: #17458f;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .abstract-toggle:focus {
   outline: 2px solid #9db4d8;
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 .paper-abstract {

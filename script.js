@@ -17,7 +17,7 @@ document.querySelectorAll(".abstract-toggle").forEach((button) => {
     const shouldExpand = !isExpanded;
 
     button.setAttribute("aria-expanded", String(shouldExpand));
-    button.textContent = shouldExpand ? "Hide abstract" : "Extended abstract";
+    button.textContent = shouldExpand ? "[hide abstract]" : "[abstract]";
     abstract.hidden = !shouldExpand;
   });
 });
