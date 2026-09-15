@@ -18,12 +18,14 @@ body {
 
 a {
   color: #1e5bc3;
+  text-decoration: none;
   text-underline-offset: 0.16em;
 }
 
 a:hover,
 a:focus {
   color: #17458f;
+  text-decoration: underline;
 }
 
 .page-wrap {
@@ -45,6 +47,17 @@ a:focus {
   line-height: 1.1;
   color: #20242a;
   font-weight: 700;
+}
+
+.identity h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.identity h1 a:hover,
+.identity h1 a:focus {
+  color: #1e5bc3;
+  text-decoration: none;
 }
 
 .identity p {
@@ -85,6 +98,7 @@ a:focus {
 .top-nav a:focus {
   border-bottom-color: #9db4d8;
   color: #1e5bc3;
+  text-decoration: none;
 }
 
 .top-nav a.current {
@@ -260,6 +274,11 @@ footer {
 
 .paper-links a {
   text-decoration: none;
+}
+
+.paper-links a:hover,
+.paper-links a:focus {
+  text-decoration: underline;
 }
 
 .abstract-toggle {
