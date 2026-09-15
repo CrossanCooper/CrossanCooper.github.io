@@ -7,8 +7,9 @@ if (year) {
 document.querySelectorAll(".abstract-toggle").forEach((button) => {
   const abstractId = button.getAttribute("aria-controls");
   const abstract = document.getElementById(abstractId);
+  const label = button.querySelector(".bracketed-link-label");
 
-  if (!abstract) {
+  if (!abstract || !label) {
     return;
   }
 
@@ -17,7 +18,7 @@ document.querySelectorAll(".abstract-toggle").forEach((button) => {
     const shouldExpand = !isExpanded;
 
     button.setAttribute("aria-expanded", String(shouldExpand));
-    button.textContent = shouldExpand ? "[hide abstract]" : "[abstract]";
+    label.textContent = shouldExpand ? "hide abstract" : "abstract";
     abstract.hidden = !shouldExpand;
   });
 });

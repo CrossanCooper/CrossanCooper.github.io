@@ -276,11 +276,6 @@ footer {
   text-decoration: none;
 }
 
-.paper-links a:hover,
-.paper-links a:focus {
-  text-decoration: underline;
-}
-
 .abstract-toggle {
   display: inline;
   margin: 0;
@@ -304,6 +299,17 @@ footer {
 .abstract-toggle:focus {
   outline: 2px solid #9db4d8;
   outline-offset: 3px;
+}
+
+.bracketed-link:hover,
+.bracketed-link:focus {
+  text-decoration: none;
+}
+
+.bracketed-link:hover .bracketed-link-label,
+.bracketed-link:focus .bracketed-link-label {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .paper-abstract {
