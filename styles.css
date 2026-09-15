@@ -234,6 +234,23 @@ footer {
   font-size: 0.94rem;
 }
 
+.paper-press {
+  margin-top: 0.25rem;
+}
+
+.media-label {
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.coauthor-link {
+  text-decoration: none;
+}
+
+.media-link {
+  text-decoration: none;
+}
+
 .paper-links {
   display: inline;
   margin-left: 0.22rem;
