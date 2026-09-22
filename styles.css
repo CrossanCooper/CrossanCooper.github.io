@@ -248,12 +248,19 @@ footer {
   font-size: 0.94rem;
 }
 
+.paper-presentation,
 .paper-press {
   margin-top: 0.25rem;
 }
 
+/* Keep conference names small, with italics limited to the metadata labels. */
+.paper-presentation,
 .media-label {
   font-size: 0.88rem;
+}
+
+.presentation-label,
+.media-label {
   font-style: italic;
 }
 
